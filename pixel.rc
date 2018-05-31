@@ -1,6 +1,9 @@
 group=1
 controller=1
 stripsattached=1
-strip1=ws2811
+strip1=ws2811 #driver
 order1=grb #color corrected
 pixels=50
+ether=192.168.XX.XX #network priority solution
+netmask=255.255.255.0
+gateway=192.168.XX.XX
