@@ -42,46 +42,13 @@ void draw()
           {     
           //Sri           
           //Vertical  
-          int x = 5;
-          float r = random(0,50);
-          while(x<100)
-          {
-          x= x+5;
-          if (r > 25)
-          {
-          int[] row12 = {8,9,10,29,30};
-          for(int i : row12) {strip.setPixel(color(127,0,255), i);}//Violet
-          int[] row34 = {7,12,27,33,32};
-          for(int i : row34) {strip.setPixel(color(255,0,0), i);}//Red   
-          int[] Green = {4,5,14,15,24,25,34,35};
-          for(int i : Green) {strip.setPixel(color(255,255,0), i);}//Yellow   
-          int[] row78 = {2,3,16,17,22,23,36,37,42,43};
-          for(int i : row78) {strip.setPixel(color(0,255,0), i);}//Green  
-          int[] row910 = {0,1,18,19,20,21,38,39,40,41};
-          for(int i : row910) {strip.setPixel(color(0,0,255), i);}//Blue  
-          }
-          else
-          {
-          int[] row12 = {8,9,10,29,39};
-          for(int i : row12) {strip.setPixel(color(127,0,255), i);}//Violet
-          int[] row34 = {7,12,27,33,32};
-          for(int i : row34) {strip.setPixel(color(255,0,0), i);}//Red   
-          int[] Green = {4,5,14,15,24,25,34,35};
-          for(int i : Green) {strip.setPixel(color(255,255,0), i);}//Yellow   
-          int[] row78 = {2,3,16,17,22,23,36,37,42,43};
-          for(int i : row78) {strip.setPixel(color(0,255,0), i);}//Green  
-          int[] row910 = {0,1,18,19,20,21,38,39,40,41};
-          for(int i : row910) {strip.setPixel(color(0,0,255), i);}//Blue   
-          delay(5);
-          }
-          //Horizontal
-          //for(int j = 0; j < 10; j = j+1){strip.setPixel(color(127,0,255), j);}//Violet
-          //for(int j = 10; j < 20; j = j+1){strip.setPixel(color(0,0,255), j);}//Blue
-          //for(int j = 20; j < 30; j = j+1){strip.setPixel(color(0,255,0), j);}//Green
-          //for(int j = 30; j < 40; j = j+1){strip.setPixel(color(255,255,0), j);}//Yellow 
-          //for(int j = 40; j < 50; j = j+1){strip.setPixel(color(255,0,0), j);}//Red
+          int[] s = {5,8,9,10,14,25,29,30,34,7,12,27,33,32};
+          for(int i : s) {strip.setPixel(color(255,0,0), i);}   
+          int[] re = {0,1,2,3,4,15,17,21,23,24,39};
+          for(int i : re) {strip.setPixel(color(0,0,255), i);}   
+          int[] ie = {40,41,42,44};
+          for(int i : ie) {strip.setPixel(color(0,255,0), i);}
           }
           }
-        }
-    }
+        }        
 }
